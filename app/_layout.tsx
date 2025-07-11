@@ -3,9 +3,12 @@ import { useFonts } from 'expo-font';
 import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import 'react-native-reanimated';
+import '../unistyles';
 
 // import { useColorScheme } from '@/hooks/useColorScheme';
 import { Fragment } from 'react';
+
+console.log('LOADED RootLayout');
 
 export default function RootLayout() {
   // const colorScheme = useColorScheme();

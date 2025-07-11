@@ -1,6 +1,11 @@
+import '@/unistyles'
+
+import { Button } from '@/components/Button'
 import { Stack } from 'expo-router'
 import React from 'react'
 import { useUnistyles } from 'react-native-unistyles'
+
+console.log('LOADED SettingsLayout');
 
 export default function SettingsLayout() {
     const { theme } = useUnistyles()
@@ -16,7 +21,8 @@ export default function SettingsLayout() {
                 },
                 contentStyle: {
                     backgroundColor: theme.colors.background
-                }
+                },
+                headerLeft: () => <Button label="Test" onPress={() => {}} />
             }}
         >
             <Stack.Screen
